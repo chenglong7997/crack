@@ -1,6 +1,9 @@
 /*
  *given a sorted(increasing order) array, write an algorithm to create a bst with minimal height
  *
+ * similar lc questions: sorted list to bst
+ * pre-order travel to bst
+ * bst save to file
  * */
 
 #include <stdio.h>
