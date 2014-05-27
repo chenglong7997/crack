@@ -1,3 +1,12 @@
+/*
+ *You have two numbers represented by a linked list, where each node contails a single digit.
+ *The digits are stored in reverse order. Write function that adds the two numbers and return
+ *the sum as a linked list
+ *
+ * Follow up:
+ * suppose the digits are stored in forward order, repeat the above problem
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

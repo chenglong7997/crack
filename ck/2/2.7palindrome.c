@@ -1,3 +1,8 @@
+/*
+ *implement a function to check if a linked list is a palindrome
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

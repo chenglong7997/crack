@@ -1,3 +1,9 @@
+/*
+ *write code to remove duplicates from an unsorted linked list
+ *follow up:
+ *How would you solve this problem if a temporay buffer is not allowed?
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"
