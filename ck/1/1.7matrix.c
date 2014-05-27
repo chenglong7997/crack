@@ -1,3 +1,8 @@
+/*
+ *Write an algorithm such that if an element in an N * N matrix is 0, its entire
+ *row and column are set to 0
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 

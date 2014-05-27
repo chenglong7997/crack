@@ -1,3 +1,9 @@
+/*
+ * cracking the codeing interview 5th
+ * implement an algorithm to determine if a string has all unique characters
+ * follow up : what if you cannot use additional data structures?
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 

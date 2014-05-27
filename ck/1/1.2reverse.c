@@ -1,3 +1,8 @@
+/*
+ *implement a function void reverse(char* str) in c or c++ which reverses a null-terminated string
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 

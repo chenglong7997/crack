@@ -1,3 +1,9 @@
+/*
+ *Given an image represendted by N * N matrix, where each pixel in the image is 4 bytes,
+ *write a method to rotate the image by 90 degrees
+ *follow up: can you do this in place?
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

@@ -1,3 +1,9 @@
+/*
+ *write a method to replace all spaces in a string with '%20'
+ *Ex: input "Mr John Smith"
+ *Output: "Mr%20John%20Smith""
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 
