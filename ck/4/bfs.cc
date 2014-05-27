@@ -1,3 +1,9 @@
+/*
+ *bfs to print the tree
+ *one line for one level
+ *
+ * */
+
 #include <iostream>
 #include <queue>
 #include "build.h"

@@ -1,3 +1,9 @@
+/*
+ *find the 'next' node (eg: in-order successor) of a given node in a bst.
+ *
+ * You may assume that each node has a link to its parent
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

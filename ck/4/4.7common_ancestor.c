@@ -1,3 +1,9 @@
+/*
+ *Find the first common ancestor of two nodes in a binary tree
+ *
+ * */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -12,8 +18,11 @@ node_t* find_common_ancestor(node_t* root, node_t* left, node_t* right)
     if (root->data == left->data || root->data == right->data) return root;
 
     int l = inorder(root->left, left, right);
+    // they are in root->left subtree
     if (l == 2) return find_common_ancestor(root->left, left, right);
+    // one in root->left subtree, another should be in root->right subtree
     if (l == 1) return root;
+    // they are in root->right subtree
     if (l == 0) return find_common_ancestor(root->right, left, right);
     return NULL;    
 }

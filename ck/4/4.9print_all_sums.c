@@ -1,3 +1,11 @@
+/*
+ *Print all paths which sum to a give value.
+ *
+ * note that a path can start or end anywhere in the tree
+ *
+ * similar question: start from root, end with a leaf node (stanford)
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

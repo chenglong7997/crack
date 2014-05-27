@@ -1,3 +1,11 @@
+/*
+ *Given a binary tree, design an algorithm which creates a linked list of all the
+ *nodes at each depth
+ *(eg: if you have a tree with depth D, you will have D linked lists)
+ *
+ * similar question: populating next right pointers in each node (lc)
+ * */
+
 #include <iostream>
 #include <queue>
 #include "build.h"

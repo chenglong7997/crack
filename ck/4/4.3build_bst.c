@@ -1,3 +1,8 @@
+/*
+ *given a sorted(increasing order) array, write an algorithm to create a bst with minimal height
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
