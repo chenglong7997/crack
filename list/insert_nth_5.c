@@ -1,3 +1,8 @@
+/*
+ *insert a new node at any index within a list
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

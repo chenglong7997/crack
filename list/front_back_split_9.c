@@ -1,3 +1,8 @@
+/*
+ *Given a list, split it into two sublists - one for the front half and one fot the back half
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

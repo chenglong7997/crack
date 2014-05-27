@@ -1,3 +1,7 @@
+/*
+ *count the number of times a given int occurs in a list
+ * */
+
 #include <stdio.h>
 #include "build.h"
 

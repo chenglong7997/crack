@@ -1,3 +1,7 @@
+/*
+ *takes a non-empty list, deletes the head node, and returns the head node's data
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

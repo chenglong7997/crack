@@ -1,3 +1,8 @@
+/*
+ *takes two lists, removes the front node the the second list and pushs in to 
+ *the front of the first.
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

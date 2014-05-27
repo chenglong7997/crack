@@ -1,3 +1,7 @@
+/*
+ *append list 'b' to the end of list 'a', and sets 'b' to NULL
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

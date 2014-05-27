@@ -1,3 +1,11 @@
+/*
+ *given a list that is sorted in increasing order and a single node,
+ *insert the node into the correct sorted position in the list
+ *
+ * And insert_sort which given a list, rearranges its nodes so they are
+ * sorted in increasing order
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

@@ -1,3 +1,9 @@
+/*
+ *takes one list and divides up its nodes to make two smaller lists. The sublists should be made
+ *from alternating elements in the original list.
+ *EX: {a,b,a,b,a} => {a,a,a} {b,b}
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

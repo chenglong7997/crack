@@ -1,3 +1,10 @@
+/*
+ *given two lists, merge their nodes together to make one list, taking nodes alternately between
+ * the two lists.
+ * EX: {1,2,3} {7, 13, 1} => {1,7,2,13,3,1}
+ * using this function and front_back_split, you can simulate the shuffling of cards
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

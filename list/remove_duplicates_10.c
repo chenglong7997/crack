@@ -1,3 +1,8 @@
+/*
+ *remove duplicates from sorted list
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

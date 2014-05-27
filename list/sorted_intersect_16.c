@@ -1,3 +1,8 @@
+/*
+ *given two sorted list, return a new list represendting the intersection of the two lists
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

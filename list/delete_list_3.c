@@ -1,3 +1,7 @@
+/*
+ *deallocates list's memory and sets its head pointer to NULL
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

@@ -1,3 +1,8 @@
+/*
+ *returns the data value stored in the node at given index position
+ *
+ * */
+
 #include <stdio.h>
 #include "build.h"
 

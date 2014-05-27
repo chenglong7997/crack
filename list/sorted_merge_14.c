@@ -1,3 +1,11 @@
+/*
+ *takes two sorted lists, merges two together into one list which is in increasing order.
+ *
+ * And merge_sort
+ * split the list into two smaller lists, recursively sort those lists, and finally merge two sorted
+ * list together into a single sorted list
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"
