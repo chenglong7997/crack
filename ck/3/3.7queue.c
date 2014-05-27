@@ -1,3 +1,9 @@
+/*
+ * animal shelter holds only dogs and cats, and operates on a strctly "first in, first out"
+ * basis.
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

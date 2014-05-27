@@ -1,3 +1,8 @@
+/*
+ *implement a data structure set_of_stacks
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

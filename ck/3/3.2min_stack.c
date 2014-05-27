@@ -1,3 +1,8 @@
+/*
+ *design a stack which, in addition to push and pop, also has a function min which
+ *returns the minimum element?
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

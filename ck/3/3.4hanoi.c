@@ -1,3 +1,9 @@
+/*
+ *Tower of hanoi
+ *
+ *you have 3 towers and N disks of different sizes which can slide onto any tower.
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
