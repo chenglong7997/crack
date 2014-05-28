@@ -16,6 +16,7 @@ int len(node_t* head);
 node_t* add_lists(node_t* left, node_t* right);
 void append(node_t** head, int value);
 void add_lists_test();
+node_t* add_reverse_lists(node_t* left, node_t* right);
 
 int main()
 {
@@ -30,7 +31,7 @@ void add_lists_test()
     printf("test1\n");
     print_list(list1);
     print_list(list2);
-    node_t* result = add_lists(list1, list2);
+    node_t* result = add_reverse_lists(list1, list2);
     print_list(result);
 
     printf("test2\n");
@@ -38,7 +39,7 @@ void add_lists_test()
     list2 = build_n_list(4, 10);
     print_list(list1);
     print_list(list2);
-    result = add_lists(list1, list2);
+    result = add_reverse_lists(list1, list2);
     print_list(result);
     
     printf("test3\n");
@@ -50,11 +51,66 @@ void add_lists_test()
     print_list(result);
 }
 
-node_t* add_reverse_lists(node_t left, node_t* right)
+void push(node_t** head, int data)
 {
-    //len
-    //1.reverse the list. or use a stack to add from tail 2.change to int. 
+    if (*head == NULL)
+    {
+        *head = new_node(data);
+    } else {
+        node_t* tmp  = new_node(data);
+	tmp->next = *head;
+	*head = tmp;
+    }
 }
+
+//return the carry
+int helper(node_t* left, node_t* right, node_t** head)
+{
+    if (!left || !right) return 0; 
+
+    int carry = helper(left->next, right->next, head);
+    int sum = carry + left->data + right->data;
+    push(head, sum % 10);
+    return sum / 10;
+}
+
+//1. reverse the list. 
+//2. or use a stack to add from tail 
+//3. change to int. 
+node_t* add_reverse_lists(node_t* left, node_t* right)
+{
+
+    int left_len = len(left);
+    int right_len = len(right);
+    int diff = left_len - right_len;
+    node_t* left_index = left;
+    node_t* right_index = right;
+    node_t* head = NULL;
+
+    //fix the start index
+    while (diff) 
+    {
+        if (diff > 0)
+	{
+	    append(&head, left->data);
+            left_index = left_index->next;
+	    diff--;
+	} else {
+	    append(&head, right->data);
+	    right_index = right_index->next;
+	    diff++;
+	}
+    }
+
+    //
+    int carry = helper(left, right, &head);
+
+    if (carry)
+        append(&head, carry);
+
+    return head;
+}
+
 
 node_t* add_lists(node_t* left, node_t* right)
 {
