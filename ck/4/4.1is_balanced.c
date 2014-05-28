@@ -28,12 +28,15 @@ int is_balanced(node_t* root)
         return is_balanced(root->left) && is_balanced(root->right);
 }
 
+//if current node is NULL, the height is 0
+//if current node is not balanced, return -1
+//else, return the true height
 int get_height_balanced(node_t* root)
 {
     if (root == NULL) return 0;
 
-    int left_height = get_height(root->left);
-    int right_height = get_height(root->right);
+    int left_height = get_height_balanced(root->left);
+    int right_height = get_height_balanced(root->right);
     
     if (left_height == -1 || right_height == -1) return -1;
 
