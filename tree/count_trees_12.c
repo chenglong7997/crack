@@ -1,3 +1,8 @@
+/*
+ *suppose you are building an N node bst with the values 1....n, how many
+ *structurally different bst are there that store those values?
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 

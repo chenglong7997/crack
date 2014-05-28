@@ -1,3 +1,8 @@
+/*
+ *change a tree so that the roles of the left and right pointers are swapped at every node
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

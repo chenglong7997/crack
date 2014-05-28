@@ -1,3 +1,8 @@
+/*
+ *given two binary trees, return true if they are structurally identical
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

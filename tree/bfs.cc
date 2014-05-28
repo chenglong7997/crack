@@ -1,3 +1,8 @@
+/*
+ *bfs to print the tree with spaces and lines
+ *
+ * */
+
 #include <iostream>
 #include <queue>
 #include "build.h"
@@ -8,7 +13,7 @@
 #define SPACES 100
 
 void bfs(node_t* root);
-/*
+
 int main()
 {
     node_t* root = build_n_tree(15, 0);
@@ -25,7 +30,7 @@ int main()
     root = build123();
     bfs(root);
 }
-*/
+
 void bfs(node_t* root)
 {
     int cur_level_nodes = 0;

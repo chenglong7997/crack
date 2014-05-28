@@ -1,3 +1,8 @@
+/*
+ *print all "root leaf paths"
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

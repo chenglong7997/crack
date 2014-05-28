@@ -1,3 +1,8 @@
+/*
+ *given the bst, return the minimum data value
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

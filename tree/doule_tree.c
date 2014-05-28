@@ -1,3 +1,8 @@
+/*
+ *for each node in bst, create a new duplicate node and insert the duplicate as the left child of
+ *the original node
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

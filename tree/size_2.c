@@ -1,3 +1,7 @@
+/*
+ *count the number of nodes in the tree
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"
