@@ -1,3 +1,8 @@
+/*
+ *find all root-to-leaf paths where each path's sum equals the given sum
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"
