@@ -72,6 +72,7 @@ void push (node_t** list, node_t* node)
  * 
  * */
 
+// use queue to store all the list may make life easier
 node_t* bfs_to_list(node_t* root)
 {
     if (root == NULL) return NULL;
