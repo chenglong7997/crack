@@ -1,3 +1,9 @@
+/*
+ *change the tree to a double linked list
+ *
+ *not too efficient since we have to seach_first and search_last in each recursive call
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

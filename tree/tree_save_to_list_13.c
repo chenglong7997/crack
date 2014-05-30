@@ -1,3 +1,10 @@
+/*
+ *Do it for fun.
+ *save the tree to list using the "next" pointer in each node
+ *
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"

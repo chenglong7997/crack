@@ -1,3 +1,9 @@
+/*
+ *tree to circular double linked list
+ *
+ *can comment line 27,28,29 to change the tree to just double linked list
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "build.h"
@@ -28,6 +34,7 @@ void helper(node_t* root, node_t *& prev, node_t *& head)
 
 node_t* tree_to_list(node_t* root)
 {
+    //head for the double list
     node_t* head = NULL;
     node_t* prev = NULL;
     helper(root, prev, head);
