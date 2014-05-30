@@ -1,3 +1,10 @@
+/*
+ *unique path with obstacles
+ *
+ *
+ * DP problem
+ * */
+
 #include <iostream>
 #include <vector>
 using namespace std;

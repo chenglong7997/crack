@@ -1,3 +1,11 @@
+/*
+ *The robot is trying to reach to the bottom-right corner of the gird from the top-left corner. M * N gird
+ *
+ * how many possible unique paths are there?
+ *
+ * DP problem: using a rolling row to store previous results
+ * */
+
 #include <iostream>
 #include <vector>
 using namespace std;
