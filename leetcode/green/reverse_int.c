@@ -1,3 +1,9 @@
+/*
+ *
+ *can also use long long integer to handle overflow case, but this is language specific and 
+ *larger type might not always be available on all languages
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 
