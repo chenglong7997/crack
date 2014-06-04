@@ -11,7 +11,15 @@
 
  This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
  */
+#include <iostream>
+#include <vector>
+using namespace std;
 
+struct Interval
+{
+    int start;
+    int end;
+};
 
 vector<Interval> insert(vector<Interval> &intervals, Interval new_interval)
 {
