@@ -1,3 +1,9 @@
+/*
+ *Returns a pointer to the first occurrence of needle in haystack, or null if needle is not part of haystack.
+ * KMP
+ * rolling hash
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,6 +20,7 @@ char* str_str(char* str, char* target)
         if (*pslow == *pt)
 	{
             pfast = pslow;
+	    //there is a possible match
 	    while (*pt != '\0' && *pfast != '\0')
 	    {
 	        if (*pt == *pfast)

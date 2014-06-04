@@ -1,3 +1,17 @@
+/* Validate if a given string is numeric.
+ *
+ * Some examples:
+ * "0" => true
+ * " 0.1 " => true
+ * "abc" => false
+ * "1 a" => false
+ * "2e10" => true
+ *
+ *
+ *regex = "[-+]?(\\d+\\.?|\\.\\d+)\\d*(e[-+]?\\d+)?"
+ *
+ * */
+
 #include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
@@ -5,27 +19,6 @@
 
 #define false 0
 #define true 1
-
-int valid(char* s, int has_dot);
-
-    int isNumber(const char *s) {
-        if (s == NULL) return false;
-
-        char tmp[strlen(s) + 1];
-        memset(tmp, 0, strlen(s) + 1);
-        strncpy(tmp, s, strlen(s) + 1);
-        //avoid "3e" which is the false
-        if (strlen(s) > 0 && (s[strlen(s) - 1] == 'e' || s[0] == 'e'))
-            return false;
-
-        char* first = strtok(tmp, "e");
-        char* last = strtok(NULL, "e");
-
-        int ret = valid(first, false);
-        if (last != NULL)
-            ret = ret && valid(last, true);
-        return ret;
-    }
 
 int valid(char* s, int has_dot)
 {
@@ -47,6 +40,27 @@ int valid(char* s, int has_dot)
     }
     return true;
 }
+
+int isNumber(const char *s)
+{
+        if (s == NULL) return false;
+
+        char tmp[strlen(s) + 1];
+        memset(tmp, 0, strlen(s) + 1);
+        strncpy(tmp, s, strlen(s) + 1);
+        //avoid "3e" which is the false
+        if (strlen(s) > 0 && (s[strlen(s) - 1] == 'e' || s[0] == 'e'))
+            return false;
+
+        char* first = strtok(tmp, "e");
+        char* last = strtok(NULL, "e");
+
+        int ret = valid(first, false);
+        if (last != NULL)
+            ret = ret && valid(last, true);
+        return ret;
+}
+
 
 int main()
 {

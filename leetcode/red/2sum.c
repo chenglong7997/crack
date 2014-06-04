@@ -1,3 +1,9 @@
+/*
+ *Given an array of integers, find two numbers such that they add up to a specific target number.
+ *
+ *You may assume that each input would have exactly one solution.`
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

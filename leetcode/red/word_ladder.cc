@@ -1,3 +1,23 @@
+/*
+ *Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end, such that:
+
+ Only one letter can be changed at a time
+ Each intermediate word must exist in the dictionary
+ For example,
+
+Given:
+start = "hit"
+end = "cog"
+dict = ["hot","dot","dog","lot","log"]
+As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+return its length 5.
+
+Note:
+Return 0 if there is no such transformation sequence.
+All words have the same length.
+All words contain only lowercase alphabetic characters.
+ * */
+
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -24,7 +44,6 @@ int ladder_len(std::string start, std::string end, std::set<std::string> &dict)
         std::string node = bfs_queue.front();
         tmp = node;
         bfs_queue.pop();
-        ++distance;
         cout << "dis" << distance <<endl;
         for (int i = 0; i < str_len; i++)
         {
@@ -34,16 +53,14 @@ int ladder_len(std::string start, std::string end, std::set<std::string> &dict)
                 std::set<std::string>::const_iterator got = dict.find(tmp);
                 if (got != dict.end())
                 {
-            	cout << "tmp1" << tmp <<endl;
-                    if (tmp.compare(end) == 0) return distance;
+                    if (tmp.compare(end) == 0) return distance + 1;
                     bfs_queue.push(tmp);
                     dict.erase(got);
                 }
-            	cout << "tmp2" << tmp <<endl;
-                if (tmp == "cog") return distance;
             }
             tmp = node;
         }
+	++distance;
     }
     return 0;
 }

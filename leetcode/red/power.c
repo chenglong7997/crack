@@ -1,3 +1,7 @@
+/*
+ *binary search
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -29,6 +33,7 @@ double power2(double x, int n)
     if (n % 2 != 0)
         ans *= x;
 
+    // n can be negative
     if (n < 0) 
     {
 	tmp =  power(x, -n / 2);
