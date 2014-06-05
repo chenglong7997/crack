@@ -1,6 +1,5 @@
-surround regions
-regex
-wildcard matching
+surround regions (*)
+regex == wildcard matching
 
 edit distance
 restore ip address
