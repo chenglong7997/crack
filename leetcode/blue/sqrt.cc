@@ -1,3 +1,9 @@
+/*
+ *return the square root of x
+ *
+ * binary search
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 

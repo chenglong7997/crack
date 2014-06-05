@@ -1,3 +1,12 @@
+/*Given two binary strings, return their sum (also a binary string).
+ *
+ * For example,
+ * a = "11"
+ * b = "1"
+ * Return "100".
+ *
+ * */
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -15,12 +24,13 @@ string add_binary(string a, string b)
     for (i = a.length() - 1, j = b.length() - 1; i >= 0 || j >= 0; i--, j--)
     {
 	    sum = 0;
+	    //only a left
 	    if (j <= -1)
 	    {
 	        inta = a[i] - '0';
 		sum = inta + carry;
 	    }
-	    else if (i <= -1)
+	    else if (i <= -1) //only b left
 	    {
 	        intb = b[j] - '0';
 		sum = intb + carry;

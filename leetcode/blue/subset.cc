@@ -1,3 +1,25 @@
+/*Given a set of distinct integers, S, return all possible subsets.
+ *
+ * Note:
+ * Elements in a subset must be in non-descending order.
+ * The solution set must not contain duplicate subsets.
+ * For example,
+ * If S = [1,2,3], a solution is:
+ *
+ * [
+ *   [3],
+ *   [1],
+ *   [2],
+ *   [1,2,3],
+ *   [1,3],
+ *   [2,3],
+ *   [1,2],
+ *   []
+ * ]
+ *
+ *
+ * */
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -23,7 +45,8 @@ void do_subsets(int level, vector<int> &s, vector<vector<int> > &ret, vector<int
     {
         solution.push_back(s[i]);
 	ret.push_back(solution);
-	
+        
+        // if level == s.size() - 1, this is the last one element	
 	if (level < (s.size() - 1))
             do_subsets(i + 1, s, ret, solution);
 	solution.pop_back();
