@@ -1,3 +1,11 @@
+/*Given a digit string, return all possible letter combinations that the number could represent.
+ *
+ * A mapping of digit to letters (just like on the telephone buttons) is given below.
+ *
+ * Input:Digit string "23"
+ * Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+ * */
+
 #include <string>
 #include <vector>
 #include <iostream>
@@ -18,6 +26,7 @@ vector<string> letter_com(string digits)
     }
 
     vector<string> remain = letter_com(digits.substr(1));
+    
     int index = digits[0] - '0';
     for (int i = 0; i < array[index].size(); i++)
     {

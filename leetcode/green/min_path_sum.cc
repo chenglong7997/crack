@@ -14,6 +14,7 @@
 #include <algorithm>
 using namespace std;
 
+//rolling array to store the cost
 int min_path_sum(vector<vector<int> > &grid)
 {
     if (grid.size() == 0) assert(0);

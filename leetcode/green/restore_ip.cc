@@ -1,3 +1,12 @@
+/*Given a string containing only digits, restore it by returning all possible valid IP address combinations.
+ *
+ * For example:
+ * Given "25525511135",
+ *
+ * return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
+ *
+ * */`
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -5,6 +14,7 @@ using namespace std;
 
 void restore(string s, int start, int partition_num, string result_ip, vector<string> &ans)
 {
+    //s.length() should in correct range
     if (s.length() - start > (4 - partition_num) * 3 ||
         s.length() - start < (4 - partition_num)) return;    
 

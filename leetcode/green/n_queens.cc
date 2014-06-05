@@ -1,3 +1,24 @@
+/*Given an integer n, return all distinct solutions to the n-queens puzzle.
+ *
+ * Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
+ *
+ * For example,
+ * There exist two distinct solutions to the 4-queens puzzle:
+ *
+ * [
+ *  [".Q..",  // Solution 1
+ *   "...Q",
+ *   "Q...",
+ *   "..Q."],
+ *
+ *         ["..Q.",  // Solution 2
+ *          "Q...",
+ *          "...Q",
+ *          ".Q.."]
+ * ]
+ *
+ * */
+
 #include <vector>
 #include <iostream>
 #include <stdlib.h>
@@ -65,6 +86,7 @@ void place_queen(vector<int> &ans, int cur, int n)
 
 vector<vector<string> > solve_nqueens(int n)
 {
+    //ans represent the index for every row
     vector<int> ans(n, -1);
     place_queen(ans, 0, n);
     return ret;
