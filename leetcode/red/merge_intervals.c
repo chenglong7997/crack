@@ -40,6 +40,7 @@ void merge_intervals(vector<Interval>& intervals)
 
 	if(top.end < intervals[i].start)
 		s.push(intervals[i]);
+	//there is overlap, update top if we really need.(top.end < intervals[i].end)
         else if (top.end < intervals[i].end)
 	{
 	    top.end = intervals[i].end;
