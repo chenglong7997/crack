@@ -26,15 +26,18 @@ vector<Interval> insert(vector<Interval> &intervals, Interval new_interval)
     vector<Interval>::iterator it = intervals.begin();
     while (it != intervals.end())
     {
+    	//insert before it
         if (new_interval.end < it->start)
 	{
 	    intervals.insert(it, new_interval);
 	    return intervals;
-	} else if (new_intervals.start > it->end)
+	} //try to insert after it
+	else if (new_intervals.start > it->end)
 	{
 	    it++;
 	    continue;
-	} else
+	}
+	else //update the new_interval with it, and try to insert it with it->next
 	{
 	    new_interval.start = min(new_interval.start, it->start);
 	    new_interval.end = max(new_interval.end, it->end);
@@ -42,6 +45,7 @@ vector<Interval> insert(vector<Interval> &intervals, Interval new_interval)
 	}
     
     }
+    //insert the new_interval (maybe updated several times) at the end of vector
     intervals.insert(intervals.end(), new_interval);
     return intervals;
 }

@@ -23,9 +23,7 @@ int atoi(char* str)
     {
         is_negative = 1;
         str++;
-    }
-
-    if (*str == '+') str++;
+    } else if (*str == '+') str++;
 
     while (*str != '\0')
     {
